@@ -5,7 +5,7 @@ function ApagaRegistro(id) {
 
     if(_confirm) {
         for(let i = 0; i < dados.length; i++){
-            if(dados[i].ID == Id){
+            if(dados[i].Id == id){
                 dados.splice(i, 1)
             }
         }
@@ -18,7 +18,7 @@ function EditaRegistro(id) {
     $("modalRegistro").modal("show")
 
     dados.forEach(function(item) {
-        if (item.ID == id) {
+        if (item.Id == id) {
             $("#hdID").val(item.Id)
             $("txtNome".val(item.Nome))
             $("txtCPFRG".val(item.RgCpf))
@@ -49,8 +49,8 @@ function PopulaTabela(){
                 <td>${item.TipoImovel} </td>
                 <td>${item.Munic}</td>
                 <td>${item.Telefone}</td>
-                <td><button type="button" class="btn btn-primary" onclick="javascript:EditaRegistro(${item.ID});"><i class="fa fa-edit" /></button></td>
-                <td><button type="button" class="btn btn-danger" onclick="javascript:ApagaRegistro(${item.ID});"><i class="fa fa-trash" /></button></td> 
+                <td><button type="button" class="btn btn-primary" onclick="javascript:EditaRegistro(${item.Id});"><i class="fa fa-edit" /></button></td>
+                <td><button type="button" class="btn btn-danger" onclick="javascript:ApagaRegistro(${item.Id});"><i class="fa fa-trash" /></button></td> 
             </tr>`)
                      
         })
@@ -90,7 +90,7 @@ $(function () {
         }
         else {
             dados.forEach(function(item){
-                if (item.ID == _id){
+                if (item.Id == _id){
                     item.Nome = Nome
                     item.RgCpf = RgCpf
                     item.TipoImovel = TipoImovel
