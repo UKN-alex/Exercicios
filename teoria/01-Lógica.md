@@ -25,7 +25,7 @@ Resposta: Escolheria os 13 mais críticos devido sua importância e por questõe
 
 5. Como a Smart Staff ganha dinheiro?
 
-Resposta: Disponibilizando uma plataforma de busca de imovéis para diversas corretoras (Completar)
+Resposta: Disponibilizando soluções inteligentes e uma plataforma CRM para gestão de clientes, leads e atendimento online.
 
 6. Você prefere enfrentar um coelho do tamanho de um rinoceronte, ou 87 rinocerantes do tamanho de um coelho? Justifique.
 
